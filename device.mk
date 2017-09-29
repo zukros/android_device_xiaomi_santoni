@@ -288,8 +288,3 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.adb.secure=0 \
         ro.oem_unlock_supported=1
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config=mtp
-
-PRODUCT_ADDITIONAL_BUILD_PROPERTY_OVERRIDES += \
-media.sf.extractor-plugin=libffmpeg_extractor.soo
