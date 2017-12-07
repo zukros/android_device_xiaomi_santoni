@@ -296,8 +296,6 @@ typedef uint32_t GpsLocationExtendedFlags;
 #define GPS_LOCATION_EXTENDED_HAS_HOR_ELIP_UNC_MINOR 0x0400
 /** GpsLocationExtended has valid Elliptical Horizontal Uncertainty Azimuth */
 #define GPS_LOCATION_EXTENDED_HAS_HOR_ELIP_UNC_AZIMUTH 0x0800
-<<<<<<< HEAD:gps/core/gps_extended_c.h
-=======
 /** GpsLocationExtended has valid gnss sv used in position data */
 #define GPS_LOCATION_EXTENDED_HAS_GNSS_SV_USED_DATA 0x1000
 /** GpsLocationExtended has valid navSolutionMask */
@@ -344,7 +342,6 @@ typedef uint32_t LocPosDataMask;
 #define BDS_SV_PRN_MAX      235
 #define GAL_SV_PRN_MIN      301
 #define GAL_SV_PRN_MAX      336
->>>>>>> 5318587... mido: update gps and gnsspps:gps/utils/gps_extended_c.h
 
 typedef uint32_t LocPosTechMask;
 #define LOC_POS_TECH_MASK_DEFAULT ((LocPosTechMask)0x00000000)
@@ -372,8 +369,6 @@ typedef struct {
     /* timestamp uncertainty in milli seconds */
 }Gnss_ApTimeStampStructType;
 
-<<<<<<< HEAD:gps/core/gps_extended_c.h
-=======
 typedef struct {
     uint64_t gps_sv_used_ids_mask;
     uint64_t glo_sv_used_ids_mask;
@@ -410,7 +405,6 @@ typedef struct {
   uint32_t gpsTimeOfWeekMs;
 }GPSTimeStruct;
 
->>>>>>> 5318587... mido: update gps and gnsspps:gps/utils/gps_extended_c.h
 /** Represents gps location extended. */
 typedef struct {
     /** set to sizeof(GpsLocationExtended) */
@@ -445,8 +439,6 @@ typedef struct {
     float           horUncEllipseOrientAzimuth;
 
     Gnss_ApTimeStampStructType               timeStamp;
-<<<<<<< HEAD:gps/core/gps_extended_c.h
-=======
     /** Gnss sv used in position data */
     GnssSvUsedInPosition gnss_sv_used_ids;
     /** Nav solution mask to indicate sbas corrections */
@@ -459,7 +451,6 @@ typedef struct {
     LocPositionDynamics bodyFrameData;
     /** GPS Time */
     GPSTimeStruct gpsTime;
->>>>>>> 5318587... mido: update gps and gnsspps:gps/utils/gps_extended_c.h
 } GpsLocationExtended;
 
 enum loc_sess_status {
