@@ -372,6 +372,7 @@ vendor/lib64/libqmiservices.so|faa73371315493e773883cc34ece67590f536f7c
 vendor/lib64/libsmemlog.so|512653d3d9563fda55acb84d76006c298eb78ba2
 
 # Radio - from msm8996
+-app/SimSettings/SimSettings.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk|1573c58b37e3b9aca949ab5dcc562c0762db5e79
 etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
