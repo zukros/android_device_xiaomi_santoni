@@ -16,12 +16,16 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
+# Boot animation
+BOOT_ANIMATION_SIZE := 720p
+
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_santoni
+PRODUCT_NAME := du_santoni
+PRODUCT_BRAND := Xiaomi
 BOARD_VENDOR := Xiaomi
-
+PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
