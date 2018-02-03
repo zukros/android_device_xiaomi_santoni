@@ -22,7 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
 # Device identifier. This must come after all inclusions
-TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := santoni
 PRODUCT_NAME := full_santoni
 PRODUCT_BRAND := Xiaomi
